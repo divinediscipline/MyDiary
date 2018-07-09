@@ -1,171 +1,126 @@
-/* * {
-  margin: 0;
-  padding: 0;
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
-/* This defines what 1rem is. 10px in this case. */
-/* 
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(12rem);
+  }
+  80% {
+    transform: translateX(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
   box-sizing: border-box;
-  background: url("img/jot3.jpeg") no-repeat center center fixed;
-  background-size: cover;
-} 
-
-
-.wrapper {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(blue, 0.8), rgba(green, 0.8)), url(img/jot1.jpeg);
-  background-size: cover;
-}
-
-.heading-box {
-  background-color: red;
-  color: black;
-  text-align: center;
-  width: 30rem;
-  padding: 2rem;
-  margin: 0 auto;
-  margin-top: 30rem;
-}
-
-.heading-box__text {
-
-}
-
-.heading-box__btn {
-
-} */ 
-
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem); }
-  80% {
-    transform: translateX(1rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(12rem); }
-  80% {
-    transform: translateX(-2rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-/* 
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } } */
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-html {
-  font-size: 62.5%; }
-
-body {
-  box-sizing: border-box;
   font-family: 'Rubik', sans-serif;
-  /* font-weight: bold; */
   line-height: 1.7;
   color: #777;
-  /* padding: 3rem; */
 }
 
 .landing {
   height: 100vh;
-  /* rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)),  */
-  background-image: linear-gradient(to right bottom, rgba(122, 161, 244, 0.8), rgb(12, 56, 150, 0.8)), url(../img/jot1.jpeg);
+  background-image: linear-gradient(to right bottom, rgba(122, 161, 244, 0.8), rgba(12, 56, 150, 0.8)), url(../img/jot1.jpeg);
   background-size: cover;
   background-position: top;
-  /* clip-path: polygon(0% 0%, 100% 0, 100% 75vh, 0% 100%); */
-  position: relative; }
+  position: relative;
+}
 
-  .logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
+.logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+  font-weight: bold;
+  color: #222;
+}
 
-  .logo-box__logo {
-    font-size: 7.5rem; 
-  }
-  .logo-box__text {
-    font-family: 'Niconne', cursive;
-    font-size: 3.5rem;
-    
-  }
-  .landing__login {
-    position: absolute;
-    top: 4rem;
-    right: 17rem;
-    text-decoration: none;
-    font-size: 2rem;
-    color: #fff;
-    
-  }
+.logo-box__logo {
+  font-size: 7.5rem;
+}
 
-  .landing__login:hover {
-    font-weight: bold;
-    color: #222;
-  }
+.logo-box__text {
+  font-family: 'Niconne', cursive;
+  font-size: 3.5rem;
+}
 
-  .landing__signup {
-    position: absolute;
-    top: 4rem;
-    right: 4rem;
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #fff;
-  }
-  .landing__signup:hover {
-    font-weight: bold;
-    color: #222;
-  }
-  
-  .landing__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
+.landing__login {
+  position: absolute;
+  top: 4rem;
+  right: 17rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.landing__login:hover {
+  font-weight: bold;
+  color: #222;
+}
+
+.landing__signup {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.landing__signup:hover {
+  font-weight: bold;
+  color: #222;
+}
+
+.landing__text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 6rem; }
-  .heading-primary--main {
-    display: block;
-    font-size: 3rem;
-    font-weight: bold;
-    letter-spacing: .1rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out; }
+  margin-bottom: 6rem;
+}
 
-  /* .heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-    animation: moveInRight 1s ease-out; } */
+.heading-primary--main {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: .1rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -175,29 +130,34 @@ body {
   border-radius: 10rem;
   transition: all .2s;
   position: relative;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+}
 
 .btn:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-  .btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0; }
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
 
 .btn:active {
   transform: translateY(-0.1rem);
-  box-shadow: 0 0.5rem 0.1rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0.5rem 0.1rem rgba(0, 0, 0, 0.2);
+}
 
 .btn--white {
   background-color: #a3daff;
-  /* background-color: #fff; */
-  color: #222; 
+  color: #222;
   font-weight: 500;
 }
-  .btn--white::after {
-    background-color: #a3daff; }
-    
-    /* #1049c6; */
+
+.btn--white::after {
+  background-color: #a3daff;
+}
+
 .btn::after {
   content: "";
   display: inline-block;
@@ -208,12 +168,11 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all .4s; }
+  transition: all .4s;
+}
 
 .btn--animated {
   animation: moveInRight 1s ease-out;
-  /* animation: moveInBottom .5s ease-out .75s;
-  animation-fill-mode: backwards;  */
 }
 
 .footer {
@@ -227,9 +186,7 @@ body {
   font-size: 1.4rem;
   color: #222
 }
-.footer__credits:link,
-.footer__credits:visited,
-.footer__credits:hover,
-.footer__credits:active {
+
+.footer__credits:link, .footer__credits:visited, .footer__credits:hover, .footer__credits:active {
   color: #222;
 }
