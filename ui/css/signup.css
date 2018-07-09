@@ -46,9 +46,10 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   width: 45%;
-  height: 70%;
+  height: 110%;
   background-color: #eee;
   border-radius: 3px;
+  margin: 6rem 0 6rem 0;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
 }
 
