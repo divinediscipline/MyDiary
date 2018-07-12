@@ -1,0 +1,84 @@
+*, 
+*::after, 
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.7;
+  color: #777;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/jot1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+}
+.navbar {
+  /* width: 100%; */
+  /* background-color: rgba(122, 161, 244, 0.8); */
+  background-color: rgba(122, 161, 244, 0.8);
+  height: 8rem;
+
+}
+.logo-box {
+  position: absolute;
+  top: 1rem;
+  left: 4rem;
+  font-weight: bold;
+  color: #222;
+}
+.logo-box__link:link,
+.logo-box__link:visited,
+.logo-box__link:hover,
+.logo-box__link:active {
+  text-decoration: none;
+  color: black;
+}
+
+.logo-box__logo {
+  font-size: 6rem;
+}
+
+.logo-box__text {
+  font-family: 'Niconne', cursive;
+  font-size: 3rem;
+}
+
+.navbar__profile {
+  position: absolute;
+  top: 4rem;
+  right: 17rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.navbar__profile:hover {
+  font-weight: bold;
+  color: #222;
+}
+
+.navbar__logout {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.navbar__logout:hover {
+  font-weight: bold;
+  color: #222;
+}
+main {
+  position: relative;
+}

@@ -30,6 +30,13 @@ body {
   font-weight: bold;
 }
 
+.logo-box__link:link,
+.logo-box__link:visited,
+.logo-box__link:hover,
+.logo-box__link:active {
+  text-decoration: none;
+  color: black;
+}
 .logo-box__logo {
   font-size: 7.5rem;
 }
