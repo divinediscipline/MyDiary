@@ -6,13 +6,11 @@
   font-weight: bold;
 }
 
-.logo-box__link:link,
-.logo-box__link:visited,
-.logo-box__link:hover,
-.logo-box__link:active {
+.logo-box__link:link, .logo-box__link:visited, .logo-box__link:hover, .logo-box__link:active {
   text-decoration: none;
   color: black;
 }
+
 .logo-box__logo {
   font-size: 7.5rem;
 }
@@ -143,4 +141,39 @@
 
 .form__signup:link, .form__signup:visited, .form__signup:hover, .form__signup:active {
   color: black;
+}
+
+/* 995px */
+
+@media screen and (max-width: 62.19em) {
+  html {
+    font-size: 55%;
+  }
+  .login__form {
+    width: 50%;
+    left: 55%;
+    margin-top: 5rem;
+  }
+}
+
+/* 730px */
+
+@media screen and (max-width: 45.63em) {
+  .login__form {
+    left: 55%;
+  }
+  .form__input {
+    margin: 0 4rem 0 3rem;
+  }
+}
+
+/* 445px */
+
+@media screen and (max-width: 27.82em) {
+  .btn:link, .btn:visited {
+    padding: 1rem 5rem;
+  }
+  .form__input {
+    margin: 0 2rem 0 2rem;
+  }
 }

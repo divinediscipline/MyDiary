@@ -41,10 +41,8 @@
   font-weight: bold;
   color: #222;
 }
-.logo-box__link:link,
-.logo-box__link:visited,
-.logo-box__link:hover,
-.logo-box__link:active {
+
+.logo-box__link:link, .logo-box__link:visited, .logo-box__link:hover, .logo-box__link:active {
   text-decoration: none;
   color: black;
 }
@@ -167,8 +165,13 @@
 
 .footer {
   position: absolute;
-  left: 50rem;
+  /* left: 50rem; */
+  margin: 0 auto;
   bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 
 .footer__text {
@@ -179,4 +182,36 @@
 
 .footer__credits:link, .footer__credits:visited, .footer__credits:hover, .footer__credits:active {
   color: #222;
+}
+
+/* 1600px 1600/16 = 100 */
+
+@media screen and (min-width: 100em) {
+  html {
+    font-size: 72%;
+  }
+}
+
+/* 900px  900/16 = 56.25 */
+
+@media screen and (max-width: 56.25em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* 550px 550/16 = 31.25 */
+
+@media screen and (max-width: 31.25em) {
+  html {
+    font-size: 50.5%;
+  }
+}
+
+/* 420px */
+
+@media screen and (max-width: 26.25em) {
+  html {
+    font-size: 40.5%;
+  }
 }
