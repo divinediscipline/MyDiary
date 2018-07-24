@@ -34,7 +34,7 @@
   position: relative;
 }
 
-.logo-box {
+/* .logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
@@ -83,8 +83,66 @@
 .landing__signup:hover {
   font-weight: bold;
   color: #222;
+} */
+
+
+
+.navbar {
+  background-color: rgba(122, 161, 244, 0.8);
+  /* background-color: #a3daff; */
+  height: 8rem;
 }
 
+.logo-box {
+  position: absolute;
+  top: 1rem;
+  left: 4rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.logo-box__link:link, .logo-box__link:visited, .logo-box__link:hover, .logo-box__link:active {
+  text-decoration: none;
+  color: black;
+}
+
+.logo-box__logo {
+  font-size: 6rem;
+}
+
+.logo-box__text {
+  font-family: 'Niconne', cursive;
+  font-size: 3rem;
+}
+
+.landing__login {
+  position: absolute;
+  top: 4rem;
+  right: 17rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.landing__login:hover {
+  font-weight: bold;
+  color: #222;
+}
+
+.landing__signup {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.landing__signup:hover {
+  font-weight: bold;
+  color: #222;
+}
 .landing__text-box {
   position: absolute;
   top: 50%;
@@ -164,17 +222,19 @@
 }
 
 .footer {
-  position: absolute;
-  /* left: 50rem; */
+  position: fixed;
   margin: 0 auto;
-  bottom: 4rem;
+  bottom: 0;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
+  background-color: #dddfe6;
+  height: 6.5rem;
 }
 
 .footer__text {
+  margin-top: 2.5rem;
   text-align: center;
   font-size: 1.4rem;
   color: #222
