@@ -1,0 +1,308 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.7;
+  color: #777;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/jot1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+.navbar {
+  background-color: rgba(122, 161, 244, 0.8);
+  height: 8rem;
+}
+
+.logo-box {
+  position: absolute;
+  top: 1rem;
+  left: 4rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.logo-box__link:link, .logo-box__link:visited, .logo-box__link:hover, .logo-box__link:active {
+  text-decoration: none;
+  color: black;
+}
+
+.logo-box__logo {
+  font-size: 6rem;
+}
+
+.logo-box__text {
+  font-family: 'Niconne', cursive;
+  font-size: 3rem;
+}
+
+.navbar__profile {
+  position: absolute;
+  top: 4rem;
+  right: 17rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.navbar__profile:hover {
+  font-weight: bold;
+  color: #222;
+}
+
+.navbar__logout {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.navbar__logout:hover {
+  font-weight: bold;
+  color: #222;
+}
+
+main {
+  position: relative;
+}
+
+.btn-add {
+  height: 7.5rem;
+  width: 7.5rem;
+  background-color: rgba(122, 161, 244, 0.8);
+  border-radius: 50%;
+  display: inline-block;
+  position: fixed;
+  right: 11rem;
+  bottom: 5rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+}
+
+.btn-add__icon {
+  position: fixed;
+  right: 13rem;
+  bottom: 6.8rem;
+  font-size: 3.8rem;
+  color: #fff;
+}
+
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  font-size: 1.6rem;
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--white {
+  background-color: #a3daff;
+  color: #222;
+  font-weight: 500;
+  margin: 5rem 0 0 5rem;
+}
+
+.btn--white::after {
+  background-color: #a3daff;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.personal-details {
+  background-color: #d4d4d4;
+  width: 55%;
+  margin: 5rem auto;
+  font-size: 1.5rem;
+}
+
+.personal-details__heading {
+  font-size: 2rem;
+  color: #222;
+  margin: 5rem 0 2rem 5rem;
+}
+
+.personal-details__content {
+  margin: 0 0rem 2rem 4rem;
+}
+
+.personal-details__label {
+  display: inline-block;
+  width: 40%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.personal-details__field {
+  display: inline-block;
+  margin-left: 7rem;
+}
+
+.reminder-settings {
+  background-color: #d4d4d4;
+  width: 55%;
+  margin: 5rem auto;
+}
+
+.reminder-settings__heading {
+  font-size: 2rem;
+  color: #222;
+  margin: 5rem 0 2rem 5rem;
+}
+
+.reminder-settings__content {
+  margin: 0 3rem 1rem 4rem;
+}
+
+.reminder-settings__label {
+  display: inline-block;
+  width: 60%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.reminder-settings__field {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-left: 7rem;
+}
+
+.statistics {
+  background-color: #d4d4d4;
+  width: 55%;
+  margin: 5rem auto;
+  font-size: 2rem;
+}
+
+.statistics__heading {
+  font-size: 2rem;
+  color: #222;
+  margin: 5rem 0 2rem 5rem;
+}
+
+.statistics__content {
+  margin: 0 3rem 1rem 4rem;
+}
+
+.statistics__label {
+  display: inline-block;
+  width: 60%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.statistics__field {
+  display: inline-block;
+  margin-left: 7rem;
+}
+
+/* 995px */
+
+@media screen and (max-width: 62.19em) {
+  html {
+    font-size: 55%;
+  }
+  .personal-details {
+    width: 70%
+  }
+  .reminder-settings {
+    width: 70%;
+  }
+  .statistics {
+    width: 70%;
+  }
+  .btn-add {
+    right: 1rem;
+  }
+  .btn-add__icon {
+    right: 3rem;
+  }
+}
+
+/* 700px */
+
+@media screen and (max-width: 43.75em) {
+  .personal-details {
+    width: 85%
+  }
+  .reminder-settings {
+    width: 85%;
+  }
+  .statistics {
+    width: 85%;
+  }
+}
+
+/* 580px */
+
+@media screen and (max-width: 36.25em) {
+  .personal-details {
+    width: 97%
+  }
+  .reminder-settings {
+    width: 97%;
+  }
+  .statistics {
+    width: 97%;
+  }
+  .personal-details__label {
+    width: 15%;
+  }
+  .reminder-settings__label {
+    width: 35%;
+  }
+  .statistics__label {
+    width: 35%;
+  }
+}
+
+/* 420px */
+
+@media screen and (max-width: 26.25em) {
+  html {
+    font-size: 40.5%;
+  }
+}

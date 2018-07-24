@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" type="text/css" href="./css/basestyles.css">
+  <link rel="stylesheet" type="text/css" href="./css/entries.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo-box">
+      <a href="#" class="logo-box__link">
+        <i class="fas fa-book logo-box__logo"></i>
+        <span class="logo-box__text">MyDiary</span>
+      </a>
+    </div>
+    <nav>
+      <a href="./profile.html" class="navbar__profile">Profile</a>
+      <a href="./index.html" class="navbar__logout">Log out</a>
+
+    </nav>
+  </header>
+
+  <div class="heading">
+    <p class="heading__text">All entries</p>
+  </div>
+  <main class="main-content">
+    <p class="card-date">
+      July 9, 2018
+    </p>
+    <div class="card-box">
+      <a href="#">
+          <i class="fas fa-trash-alt card-box__del"></i>
+          <i class="fas fa-pencil-alt card-box__edit"></i>
+      </a>
+      <p class="card-box__time">
+        8:30am
+      </p>
+      <p class="card-box__heading">
+        Work on Monday
+      </p>
+      <p class="card-box__text">
+        Its monday morning, I'm at my "not software" related job again but all I can think of is code. Sometimes I just feel like
+        locking myself away...
+      </p>
+      <div class="card-box__button-box">
+        <a href="#" class="card-box__button">view</a>
+      </div>
+    </div>
+    <a href="#" class="btn-add" title="Add new diary entry">
+      <i class="fas fa-plus btn-add__icon"></i>
+    </a>
+    <div class="pagination">
+      <div class="pagination__content">
+          <a href="#">&laquo;</a>
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">&raquo;</a>
+      </div>
+
+    </div>
+
+  </main>
+  <footer class="footer">
+      <p class="footer__text">
+          &copy; 2018 Divinelove. Andela Cycle34  
+        </p>
+  </footer>
+  <script src="./js/myDiary.js"></script>
+
+</body>
+
+</html>
