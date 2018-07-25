@@ -32,24 +32,16 @@
 
   <div class="heading">
     <p class="heading__text">All entries</p>
-    <hr class="heading__line">
   </div>
-  <main>
+  <main class="main-content">
     <p class="card-date">
       July 9, 2018
     </p>
     <div class="card-box">
-      <a href="#" id="card-box__options">&nbsp;
-        <span class="card-box__option card-box__option--1"></span>
-        <span class="card-box__option card-box__option--2"></span>
-        <span class="card-box__option card-box__option--3"></span>
-
+      <a href="#">
+          <i class="fas fa-trash-alt card-box__del"></i>
+          <i class="fas fa-pencil-alt card-box__edit"></i>
       </a>
-      <div class="card-box__edit-del-box" id="cardDelEditBox">
-        <span class="card-box__edit">Edit</span>
-        <hr class="card-box__line">
-        <span class="card-box__del">Delete</span>
-      </div>
       <p class="card-box__time">
         8:30am
       </p>
@@ -64,11 +56,27 @@
         <a href="#" class="card-box__button">view</a>
       </div>
     </div>
-    <a href="#" class="btn-add">
+    <a href="#" class="btn-add" title="Add new diary entry">
       <i class="fas fa-plus btn-add__icon"></i>
     </a>
+    <div class="pagination">
+      <div class="pagination__content">
+          <a href="#">&laquo;</a>
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">&raquo;</a>
+      </div>
+
+    </div>
 
   </main>
+  <footer class="footer">
+      <p class="footer__text">
+          &copy; 2018 Divinelove. Andela Cycle34  
+        </p>
+  </footer>
   <script src="./js/myDiary.js"></script>
 
 </body>

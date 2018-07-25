@@ -67,18 +67,8 @@ main {
   margin-top: 3rem;
 }
 
-/* .heading__text {
-  
-} */
-
-.heading__line {
-  display: block;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  color: #a1a1a1;
-  margin-top: 1.8rem;
-  margin-bottom: 4rem;
+.main-content {
+  position: relative;
 }
 
 .card-date {
@@ -101,54 +91,24 @@ main {
   position: relative;
 }
 
-.card-box__option {
-  height: .7rem;
-  width: .7rem;
-  background-color: #bbb;
-  border-radius: 50%;
+.card-box__del {
+  font-size: 2rem;
   display: inline-block;
   position: absolute;
-  top: .6rem;
-}
-
-.card-box__option--1 {
-  right: 3rem;
-}
-
-.card-box__option--2 {
-  right: 2rem;
-}
-
-.card-box__option--3 {
-  right: .8rem;
-}
-
-.card-box__edit-del-box {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  background-color: #f6f6f6;
-  height: 9rem;
-  width: 11rem;
-  text-align: center;
-  font-size: 1.6rem;
-  display: none;
+  top: .8rem;
+  right: 4rem;
+  margin-right: 2rem;
+  color: #222;
 }
 
 .card-box__edit {
-  display: block;
-  margin: .8rem 0;
+  font-size: 2rem;
+  display: inline-block;
+  position: absolute;
+  top: .8rem;
+  right: 2rem;
+  color: #222;
 }
-
-.card-box__del {
-  display: block;
-  margin: 1rem 0;
-}
-
-.card-box__line {
-  display: block;
-}
-
 .card-box__time {
   margin: 0 0 1rem 1rem;
   padding: 1rem;
@@ -166,7 +126,7 @@ main {
 
 .card-box__text {
   font-size: 1.5rem;
-  margin: 1.5rem 1rem 5.8rem 1rem;
+  margin: 1.5rem 1rem 7.4rem 1rem;
 }
 
 .card-box__button-box {
@@ -214,6 +174,38 @@ main {
   bottom: 6.8rem;
   font-size: 3.8rem;
   color: #fff;
+}
+
+.pagination__content {
+  display: inline-block;
+  position: absolute;
+  bottom: -55rem;
+  font-size: 1.6rem;
+}
+
+.pagination a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: rgba(122, 161, 244, 0.8);
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.footer {
+  background-color: #dddfe6;
+  text-align: center;
+}
+
+.footer__text {
+  padding: 3rem 0;
+  font-size: 1.6rem;
 }
 
 /* 840px */
